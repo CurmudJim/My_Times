@@ -1,9 +1,11 @@
+body {
+  margin: 0px;
+}
 header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   background-color: white;
-  margin: auto;
   display: flex;
   flex: inline-flex;
   align-items: center;
@@ -39,7 +41,9 @@ nav a{
 main {
   display: flex;
   width: 1232px;
-  padding-top: 100px;
+  margin: 0 auto 78px auto;
+  padding-top: 120px;
+  font-family: Georgia;
 }
 
 .column {
@@ -56,4 +60,52 @@ main {
 }
 .column.small {
   width: 240px;
+}
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.lead-story .image-content {
+  background-image: url(../images/Main.png);
+  width: 630px;
+  margin-top: 0;
+  font-size: 40px;
+  text-align: left;
+}
+
+.lead-story span {
+   padding-left: 15px;
+}
+
+
+
+.stories {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+.story {
+  width: 300px;
+}
+
+
+.fall.image-content {
+  background-image: url(../images/Fall.png);
+}
+.hipster.image-content {
+  background-image: url(../images/Hipster.png);
+}
+
+.cat.image-content {
+  background-image: url(../images/Cat.png);
 }
